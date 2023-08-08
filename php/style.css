@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(75, 0, 115);
+    width: 80%;
+    margin: 0 auto;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 10px 38px;
+    border-radius: 35px;
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Poppins black;
+}
+.link:hover {
+    background-color: rgb(7, 255, 44);
+}
+.sort {
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+}
+#updown {
+    display: inline-flex;
+}
+#updown button {
+    padding: 10px 17px;
+    margin: 0;
+    border-radius: 0;
+}
+#updown button i {
+    display: inline-flex;
+    vertical-align: middle;
+}
+#updown .sorting {
+    background-color: tomato;
+}
+.sort button {
+    background-color: yellow;
+    padding: 10px 28px;
+    border-radius: 35px;
+    font-size: 15px;
+    font-family: Poppins black;
+    border: none;
+    margin: 0 15px;
+}
+.sort button:hover {
+    background-color: burlywood;  
+}
+#click {
+    background-color: tomato;
+}
+.sort .press {
+    background-color: tomato;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    background-color: tomato;
+    margin: 100px 0px 200px;
+    border-radius: 35px;
+}
+.list p {
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Poppins;
+    background-color: none;
+}
+.product {
+    text-align: center;
+}
