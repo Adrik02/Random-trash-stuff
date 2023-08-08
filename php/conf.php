@@ -72,22 +72,22 @@ switch ( $field ) {
     case 'type':
         $press1 = 'press';
         break;
-        case 'price':
-            $press2 = 'press';
-            break;
-            case 'size':
-                $press3 = 'press';
-                break;
-            }
+    case 'price':
+        $press2 = 'press';
+        break;
+    case 'size':
+        $press3 = 'press';
+        break;
+}
 /* STYLING CSS BUTTONS WITH GIVEN VALUE ASC/DESC */
 switch ( $ordertype ) {
     case 'asc':
         $sort1 = 'sorting';
         break;
-        case 'desc':
-            $sort2 = 'sorting';
-            break;
-        }
+    case 'desc':
+        $sort2 = 'sorting';
+        break;
+}
 /*
 
 PAGE SYSTEM
