@@ -16,7 +16,7 @@ session_start();
     <a class="link" href="admin.php">Admin</a>
     <div class="sort">
         <form action="" method="post">
-            <button class="<?= $press1 ?>" name="type_sort">Meno</button>
+            <button class="<?= $press1 ?>" name="type_sort">Typ</button>
             <button class="<?= $press2 ?>" name="price_sort">Cena</button>
             <button class="<?= $press3 ?>" name="size_sort">Veľkosť</button>
             <div id="updown">
