@@ -106,8 +106,6 @@ if (isset($_POST['next'])) {
     $_SESSION['page'] = 1;
 }
 $page = $_SESSION['page'];
-
-/* echo $page; */
 $offset = ( $page - 1 ) * $limit; 
         
 /* SELECTING DATA FROM DATABASE WITH SORTING STUFF & PAGE SYSTEM */
