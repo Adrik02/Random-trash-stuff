@@ -113,3 +113,16 @@ $offset = ( $page - 1 ) * $limit;
         
 /* SELECTING DATA FROM DATABASE WITH SORTING STUFF & PAGE SYSTEM */
 $select = $conn->query("SELECT * FROM food ORDER BY $field $ordertype LIMIT $limit OFFSET $offset");
+
+
+/* RESPONSIVE 
+= Working on it....
+*/
+
+/* AJAX 
+= Working on it....
+*/
+
+/* JAVASCRIPT & JQUERY
+= Working on it....
+*/
