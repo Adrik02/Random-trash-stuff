@@ -2,7 +2,7 @@
 Random trash stuff
 
 
-create database "food" then copy this:
+create database "food" then copy and insert in SQL this:
 
 DROP TABLE IF EXISTS `food`.`food`; CREATE TABLE `food`.`food` ( `id` int(8) NOT NULL, `name` varchar(15) NOT NULL, `type` varchar(15) NOT NULL, `price` decimal(15,2) NOT NULL, `size` int(15) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci; ALTER TABLE `food`.`food` ADD PRIMARY KEY (`id`); ALTER TABLE `food`.`food` MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0 ;
 
