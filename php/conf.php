@@ -18,7 +18,7 @@ $conn = new PDO("mysql:host=$servername;dbname=food", $username, $password);
 INSERT INTO DATABASE 
 
 */
-if ( isset( $_POST['send'] ) && ! empty( $_POST['name'] ) && ! empty( $_POST['type'] ) && ! empty( $_POST['price'] ) && ! empty( $_POST['size'] ) ) {
+if ( isset( $_POST['send'] ) &&  $_POST['name']  &&  $_POST['type']  &&  $_POST['price']  &&  $_POST['size']  ) {
     
     $data = [
         'name' => $_POST['name'],
@@ -31,8 +31,8 @@ if ( isset( $_POST['send'] ) && ! empty( $_POST['name'] ) && ! empty( $_POST['ty
     $stmt->execute($data);
 
     echo "Pizza poslaná";
-} else {
-    echo "Vyplň všetko";
+} else if ( isset( $_POST['send'] ) && (empty( $_POST['name'] ) || empty( $_POST['type'] ) || empty( $_POST['price'] ) || empty( $_POST['size'] )) ) {
+    echo 'Vyplň všetko';
 }
 
 
