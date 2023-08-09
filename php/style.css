@@ -1,77 +1,177 @@
 body {
-    padding: 0;
     margin: 0;
-    background-color: rgb(75, 0, 115);
+    padding: 0;
     width: 80%;
     margin: 0 auto;
+    height: 1300px;
 }
-.link {
-    text-decoration: none;
-    color: black;
-    background-color: yellow;
-    padding: 10px 38px;
-    border-radius: 35px;
-    margin-top: 100px;
-    display: inline-block;
-    font-size: 20px;
-    font-family: Poppins black;
+
+/*
+NAVBAR
+*/
+.navbar {
+    padding: 15px 0;
 }
-.link:hover {
-    background-color: rgb(7, 255, 44);
-}
-.sort {
+.navbar ul {
+    list-style-type: none;
     display: flex;
-    justify-content: right;
-    margin-top: 100px;
+    justify-content: center;
 }
-#updown {
-    display: inline-flex;
+.navbar a {
+    text-decoration: none;
+    font-family: Poppins medium;
+    font-size: 16px;
+    color: rgb(128, 113, 159);
+    margin: 0 20px;
 }
-#updown button {
-    padding: 10px 17px;
-    margin: 0;
-    border-radius: 0;
+.navbar a:hover {
+    color: rgb(41, 38, 48);
 }
-#updown button i {
-    display: inline-flex;
-    vertical-align: middle;
+
+/* BANNER */
+.banner {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 50px;
 }
-#updown .sorting {
-    background-color: tomato;
+.banner h1 {
+    font-family: Poppins medium;
+    font-size: 80px;
+    color: rgb(48, 41, 63);
+    position: relative;
+    width: 50%;
 }
+.banner img {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+/* 
+PRODUCT MENU
+*/
+
+/* BUTTONS */
 .sort button {
-    background-color: yellow;
-    padding: 10px 28px;
-    border-radius: 35px;
-    font-size: 15px;
-    font-family: Poppins black;
+    font-size: 20px;
+    font-family: Poppins;
+    background: none;
     border: none;
-    margin: 0 15px;
 }
 .sort button:hover {
-    background-color: burlywood;  
+    color: rgb(146, 96, 255);
+    cursor: pointer;
 }
-#click {
-    background-color: tomato;
+#updown {
+    display: inline;
 }
-.sort .press {
-    background-color: tomato;
+.press, .sorting {
+    color: rgb(146, 96, 255);
 }
+
+/* MENU OF PRODUCTS */
 
 .list {
     display: flex;
-    justify-content: space-around;
-    background-color: tomato;
-    margin: 100px 0px 200px;
-    border-radius: 35px;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 20px 25px;
 }
-.list p {
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
+.list p, h3, h4, h5 {
     font-family: Poppins;
-    background-color: none;
+    margin: 19px 0;
 }
-.product {
+.list h3 {
+    font-size: 40px;
+    color: rgb(60, 51, 78);
+}
+.list h4 {
+    font-family: Poppins light;
+    color: rgb(117, 112, 127);
+}
+.list h5 {
+    padding: 8px 19px;
+    background-color: yellowgreen;
+    display: inline-block;
+    color: white;
+    font-family: Poppins thin;
+    border-radius: 50px;
+}
+
+.page {
+    display: flex;
+    margin: 60px 0px;
+}
+.page button {
+    padding: 8px 19px;
+    background-color: yellowgreen;
+    display: inline-block;
+    color: white;
+    font-family: Poppins;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.page button:hover {
+    background-color: rgb(102, 131, 44);
+}
+.page p {
+    display: inline;
+    margin: 0 15px;
+    padding: 8px 19px;
+    background-color: rgb(91, 204, 214);
+    display: inline-block;
+    color: white;
+    font-family: Poppins;
+    border-radius: 50px;
+    border: none;
+}
+
+/*
+ADMIN
+*/
+.admin {
+    background-color: rgb(191, 177, 255);
     text-align: center;
+    padding: 50px 0;
+    border-radius: 50px;
 }
+.admin input {
+    margin: 30px;
+    border: none;
+    background-color: rgb(191, 177, 255);
+    padding: 15px 22px;
+    font-size: 15px;
+    font-family: Poppins light;
+    width: 30%;
+    border: 2px solid white;
+    color: rgb(67, 61, 75);
+}
+.admin input:focus {
+    outline: none;
+}
+.admin button {
+    padding: 8px 19px;
+    background-color: yellowgreen;
+    display: inline-block;
+    color: white;
+    font-family: Poppins;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.admin button:hover {
+    background-color: rgb(103, 129, 56);
+}
+
+/* RESPONSIVE 
+= Working on it....
+*/
+
+/* AJAX 
+= Working on it....
+*/
+
+/* JAVASCRIPT & JQUERY
+= Working on it....
+*/

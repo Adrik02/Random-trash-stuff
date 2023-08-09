@@ -30,8 +30,10 @@ if ( isset( $_POST['send'] ) && ! empty( $_POST['name'] ) && ! empty( $_POST['ty
     $stmt= $conn->prepare($sql);
     $stmt->execute($data);
 
-    echo "poslane";
-} 
+    echo "Pizza poslaná";
+} else {
+    echo "Vyplň všetko";
+}
 
 
 
@@ -50,7 +52,7 @@ if ( isset($_POST['type_sort']) ) {
 } else if ( isset($_POST['size_sort']) ) {
     $_SESSION['field'] = 'size';
 } else if ( empty($_SESSION['field']) ) {
-    $_SESSION['field'] = 'id';
+    $_SESSION['field'] = 'type';
 }
 
 /* SORTING BY ASC/DESC */
@@ -87,7 +89,7 @@ switch ( $ordertype ) {
     case 'desc':
         $sort2 = 'sorting';
         break;
-}
+    }
 /*
 
 PAGE SYSTEM
@@ -104,8 +106,9 @@ if (isset($_POST['next'])) {
     $_SESSION['page'] = 1;
 }
 $page = $_SESSION['page'];
+/*
 echo $page;
-
+*/
 $offset = ( $page - 1 ) * $limit; 
         
 /* SELECTING DATA FROM DATABASE WITH SORTING STUFF & PAGE SYSTEM */
